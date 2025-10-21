@@ -1,4 +1,3 @@
-
 /*--------------------------------------------------------------
 This is main CSS file that contains custom style rules used in this template
 --------------------------------------------------------------*/
@@ -54,27 +53,27 @@ CSS STRUCTURE:
 /** 1. VARIABLES
 --------------------------------------------------------------*/
 :root {
-  --accent-color: #11120D;
+  --accent-color: #11120d;
   --secondary-color: #e7b944;
-  --black-color: #3C3C3C;
+  --black-color: #3c3c3c;
   --light-black-color: #343536;
   --dark-color: #797876;
-  --primary-color: #11120D;
-  --primary-color-200: #E8F0F1;
+  --primary-color: #11120d;
+  --primary-color-200: #e8f0f1;
   --primary-color-400: #c4e9ed;
-  --gray-color: #777F81;
-  --light-color: #FFFFFF;
+  --gray-color: #777f81;
+  --light-color: #ffffff;
 
   --bs-dark-rgb: 87, 87, 87;
-  --bs-gray-100: #EEEFEF;
-  --bs-gray-300: #DCDCDC;
+  --bs-gray-100: #eeefef;
+  --bs-gray-300: #dcdcdc;
   --bs-primary-text-emphasis: var(--primary-color);
-  --bs-primary: #11120D;
+  --bs-primary: #11120d;
   --bs-light-rgb: 247, 246, 244;
   --bs-primary-rgb: 17, 18, 13;
   --bs-secondary-rgb: 197, 164, 142;
   --swiper-theme-color: #111 !important;
-  --cadet-blue-color: #9AB4B7;
+  --cadet-blue-color: #9ab4b7;
 }
 
 /* Fonts */
@@ -107,7 +106,7 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 164%;
-  letter-spacing: 0.40px;
+  letter-spacing: 0.4px;
   color: var(--dark-color);
   margin: 0;
 }
@@ -125,7 +124,6 @@ a {
 a:hover {
   color: var(--primary-color);
 }
-
 
 /*--------------------------------------------------------------
 /** 2.3 Section
@@ -171,7 +169,6 @@ a:hover {
   margin-bottom: 12em;
 }
 
-
 /* - Section Title
 --------------------------------------------------------------*/
 h1,
@@ -187,7 +184,6 @@ h6 {
   letter-spacing: 0.0675rem;
 }
 
-
 /* - Content width
 --------------------------------------------------------------*/
 .container-md {
@@ -197,7 +193,6 @@ h6 {
 .container-lg {
   max-width: 1750px;
 }
-
 
 /*--------------------------------------------------------------
 /** 2.4 Buttons
@@ -264,11 +259,11 @@ h6 {
   --bs-gradient: none;
 }
 
-.btn-check:active+.btn-primary:focus,
-.btn-check:checked+.btn-primary:focus,
+.btn-check:active + .btn-primary:focus,
+.btn-check:checked + .btn-primary:focus,
 .btn-primary.active:focus,
 .btn-primary:active:focus,
-.show>.btn-primary.dropdown-toggle:focus {
+.show > .btn-primary.dropdown-toggle:focus {
   box-shadow: none;
 }
 
@@ -332,7 +327,6 @@ select:focus {
   box-shadow: none;
 }
 
-
 /* Svg Color
 ------------------------------------------------------------- */
 svg.light-color {
@@ -344,7 +338,7 @@ svg.dark-color {
 }
 
 svg.light-blue-color {
-  color: #5BC4F1;
+  color: #5bc4f1;
 }
 
 svg.primary-color {
@@ -372,11 +366,11 @@ svg.primary-color-500 {
   height: 12px;
   background-color: var(--accent-color);
   opacity: 0.2;
-
 }
 
 .swiper-pagination span.swiper-pagination-bullet:hover,
-.swiper-pagination span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+.swiper-pagination
+  span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: var(--accent-color);
   opacity: 1;
 }
@@ -386,10 +380,13 @@ svg.primary-color-500 {
 .zoom-effect {
   position: relative;
   overflow: hidden;
+  height: 15rem;
 }
 
 .zoom-effect img {
   max-width: 100%;
+  height: 100%;
+  object-fit: cover;
   -webkit-transition: 0.6s ease-out;
   -moz-transition: 0.6s ease-out;
   transition: 0.6s ease-out;
@@ -421,7 +418,6 @@ svg.primary-color-500 {
   cursor: pointer;
 }
 
-
 /* ------ Pagination ------*/
 .pagination {
   --bs-pagination-padding-x: 0.75rem;
@@ -449,7 +445,6 @@ svg.primary-color-500 {
   list-style: none;
 }
 
-
 /*----------------------------------------------*/
 /* 4 SITE STRUCTURE */
 /*----------------------------------------------*/
@@ -465,13 +460,11 @@ a.nav-link {
 }
 
 @media screen and (max-width: 1200px) {
-
   a.nav-link,
   span.breadcrumb-item.banner-title.active {
     font-family: var(--heading-font);
     padding: 30px 0px;
     font-size: 32px;
-    ;
   }
 }
 
@@ -503,8 +496,6 @@ a.nav-link:hover {
   border-radius: 0.25rem;
 }
 
-
-
 /* 4.2 Slider Section
 /*----------------------------------------------*/
 section#slider .banner-content {
@@ -534,8 +525,6 @@ section#slider .main-slider-button-next.swiper-button-disabled,
   }
 }
 
-
-
 /* 4.3 Services Section
 /*----------------------------------------------*/
 
@@ -546,7 +535,6 @@ a.hover-color h4 {
 a.hover-color h4:hover {
   color: var(--accent-color);
 }
-
 
 /* 
  4.4 About style
@@ -577,7 +565,6 @@ iconify-icon.video-icon {
   animation: playAnimation 2s infinite alternate;
 }
 
-
 @keyframes playAnimation {
   0% {
     font-size: 35px;
@@ -587,8 +574,6 @@ iconify-icon.video-icon {
     font-size: 60px;
   }
 }
-
-
 
 /* 4.5 Popular Products
 ------------------------------------------------------------- */
@@ -623,8 +608,6 @@ iconify-icon.video-icon {
   opacity: 1;
 }
 
-
-
 /* 4.6 Footer Section
 /*----------------------------------------------*/
 iconify-icon.social-icon {
@@ -637,17 +620,14 @@ iconify-icon.social-icon {
 }
 
 iconify-icon.social-icon:hover {
-  color: #FFF;
+  color: #fff;
   border: 1px solid var(--accent-color);
   background: var(--accent-color);
 }
 
-
-
 /*----------------------------------------------*/
 /* 5 OTHER PAGES STYLE */
 /*----------------------------------------------*/
-
 
 /* --------------------------------------------------------------
 5.1 Faqs Page
@@ -670,13 +650,11 @@ iconify-icon.social-icon:hover {
   transform: rotate(0deg);
 }
 
-
 /*--------------------------------------------------------------
  5.2 Price Plan page style
   --------------------------------------------------------------*/
 .plan-post {
   border: 1px solid var(--accent-color);
-
 }
 
 span.price-tick {
@@ -686,7 +664,6 @@ span.price-tick {
 .price-option {
   height: 320px;
 }
-
 
 /* --------------------------------------------------------------
 5.3  Team page style
@@ -700,12 +677,12 @@ span.price-tick {
   transform: rotatey(-90deg) perspective(100px);
   transform-origin: left;
   cursor: pointer;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
   background-color: var(--accent-color);
 }
 
 .team-member ul li:first-of-type {
-  transition-delay: .3s;
+  transition-delay: 0.3s;
 }
 
 .team-member ul li:nth-of-type(2) {
@@ -724,7 +701,6 @@ span.price-tick {
   transform: rotatey(0deg);
 }
 
-
 /*--------------------------------------------------------------
 5.4 Reviews page style
 --------------------------------------------------------------*/
@@ -742,9 +718,6 @@ iconify-icon.quote {
 .rate {
   color: var(--accent-color);
 }
-
-
-
 
 /*--------------------------------------------------------------
 5.5 Single Product page style
